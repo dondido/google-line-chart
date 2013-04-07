@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "firstName": "Ross",
+        "lastName": "Greenhalf"
+    },
+    {
+        "id": 2,
+        "firstName": "Adam",
+        "lastName": "Hawkins"
+    },
+    {
+        "id": 3,
+        "firstName": "Elliott",
+        "lastName": "Lack"
+    },
+    {
+        "id": 4,
+        "firstName": "Adrian",
+        "lastName": "Bosworth"
+    }
+    ,
+    {
+        "id": 5,
+        "firstName": "Kelvin",
+        "lastName": "Inuk"
+    }
+    ,
+    {
+        "id": 6,
+        "firstName": "Shaun",
+        "lastName": "Bariball"
+    }
+    ,
+    {
+        "id": 7,
+        "firstName": "Richard",
+        "lastName": "Daniels"
+    }
+]

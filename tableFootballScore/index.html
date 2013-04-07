@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Table Football Scores</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="brand" href="#"> Table Football Scores </a>
+      <ul class="nav">
+        <li><a href="#players">Player List</a></li>
+        <li><a href="#results">Results List</a></li>
+        <li><a href="#addplayer">Add Player</a></li>
+        <li><a href="#addresult">Add Result</a></li>
+        <li><a href="#editplayer">Edit Players</a></li>
+        <li><a href="#editresult">Edit Results</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="content"></div>
+<!-- Templates --> 
+<script type="text/template" id="tpl-player-list-item">
+            <td><a href='#playerDetail/<%= id %>'><%= firstName %> <%= lastName %></a></td>
+        </script> 
+<script type="text/template" id="tpl-result-list-item">
+            <td><%= player1.name %></td>
+            <td><%= player1.score %></td>
+            <td><%= player2.name %></td>
+            <td><%= player2.score %></td>
+        </script> 
+<script type="text/template" id="nameInput">
+		<form action="#" id="playerName">
+   		<label>First Name:</label><input class="firstName" value=""/>
+		<label>Last Name:</label> <input class="lastName" value=""/>
+   		<button id="addPlayerName">Save</button>
+		</form>
+		</script> 
+<script type="text/template" id="resultInput">
+		<form action="#">
+		<div id="filter1"><label>Player 1:</label></div>
+		<label>Result Player 1:</label><input class="result1" value=""/>
+		<div id="filter2"><label>Player 2:</label></div>
+		<label>Result Player 2:</label><input class="result2" value="" />
+		<button id="addResults">Save</button>
+		</form>
+		</script> 
+<script type="text/template" id="playerEdit">
+		<form action="#">
+		<div id="playerSelect"><label>Select a Player:</label></div>
+		<label>First Name:</label><input class="firstName" value=""/>
+		<label>Last Name:</label> <input class="lastName" value=""/>
+		<button id="editPlayer">Save</button>
+		</form>
+		</script> 
+<script type="text/template" id="resultEdit">
+		<form action="#">
+		<div id="gameSelect"><label>Select a Game:</label></div>
+		<div id="filter3"><label>Player 1:</label></div>
+		<label>Result Player 1:</label><input class="result1" value=""/>
+		<div id="filter4"><label>Player 2:</label></div>
+		<label>Result Player 2:</label><input class="result2" value="" />
+		<button id="editResult">Save</button>
+		</form>
+		</script> 
+<!-- JS Scripts --> 
+<script type="text/javascript" src="libs/underscore.js"></script> 
+<script type="text/javascript" src="libs/jquery-1.6.2.js"></script> 
+<script type="text/javascript" src="libs/backbone.js"></script> 
+<script type="text/javascript" src="js/backbone.localStorage.js"></script> 
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
