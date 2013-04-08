@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simple Line Chart</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script data-main="js/main" src="js/libs/require.js"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="#">
+                        Simple Line Chart
+                    </a>
+                    <ul class="nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#reports">Reports</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content"></div>
+
+        <!-- Templates -->
+        <script type="text/template" id="aboutApp">
+            <table class="table table-bordered table-striped">
+  <tr>
+    <td>Create a small app using Require.js  and Backbone.js and other libraries of your choice with a reports section module.</td>
+    <td>This Backbone.js an Require.js AMD app is designed to load modular code asynchronously in the browser.</td>
+  </tr>
+  <tr>
+    <td>On the report section create a simple line chart using a library of your choice. Simulate real – time updates of the chart by using a timer to add data incrementally to the chart. Optionally include transition animation.</td>
+    <td>It contains 2 separate views (about and reports sections) which are defined by a router and can be access directly via URL. It retrieves a collection, from a JSON API external to the application. It relies on google line chart visualization library to render the collection. Real – time updates are simulated by inserting extra rows  of cells that contain randomly generated data.  Nice transition animation is included.</td>
+  </tr>
+  <tr>
+    <td>Include a nice layout using CSS.  Create clear separation between model , view , and controllers using OO inheritance , encapsulation, abstraction, and polymorphism.</td>
+    <td>It uses Twitter Bootstrap framework which was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via responsive CSS as well. Backbone.js library provides structure to web applications by using models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface. In this test we configure Require.js to create a shortcut alias to commonly used scripts such as jQuery, Underscore and Backbone.</td>
+  </tr>
+  <tr>
+    <td>The application should be able to scale with development. For example, the architecture should work to allow new modules and features added in the future.</td>
+    <td>Applications are not created equal and the reality is that the answer probably consists of a collection of patterns that can be used as necessary given the situation. At the end of the day the goal should be to create a code-base that is easy to understand, implement and maintain. ;</td>
+  </tr>
+</table>
+
+        </script>
+
+        <script type="text/template" id="lineChart">
+		<p>Dian's line chart - in draw visualization:</p>
+        <div id="lc" style="width:600px; height:300px;"></div>
+			
+        </script>
+
+    </body>
+</html>
