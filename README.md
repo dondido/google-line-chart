@@ -1,12 +1,9 @@
-table-football-score
+google-line-chart-live-updates-simulation
 ====================
 
-Score list for football table with Backbone.js and localStorage
+This Backbone.js an Require.js AMD app is designed to load modular code asynchronously in the browser.
 
-Table Football Score List with Backbone.js and localStorage. Features:
-- add results and add players section have been added
-- edit results and edit players section have been added
-- it can be easily seen who's won a match because the player's name is highighted in yellow
-- results are saved in browsers localStorage and displayed when users return to the page
+On the report section a simple line chart is created using google visualization API. Real  time updates of the chart are 
+simulated by using a timer to add data incrementally to the chart.
 
 
